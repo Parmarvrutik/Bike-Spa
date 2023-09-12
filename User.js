@@ -4,7 +4,7 @@ const db = require("./db");
 const data = {
     name: "Vrutik",
     email: "abc@gmail.com",
-    Password: "123456",
+    Password: "12346",
     mobile_no: 1234567890,
     usertype: "Customer"
 };
