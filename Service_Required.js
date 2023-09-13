@@ -30,7 +30,7 @@ async function update() {
         return false;
     }
 
-    console.log("Update Succesfully..");
+    console.log("Update Successfully..");
 }
 
 // update();
@@ -42,7 +42,7 @@ async function delete_1() {
         return false;
     }
 
-    console.log("Delete Succesfully..");
+    console.log("Delete Successfully..");
 }
 
 //  delete_1();

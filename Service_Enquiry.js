@@ -4,13 +4,16 @@ const data ={
     name: "Vrutik",
     email: "abc@gmail.com",
     mobile_no: 1234567890,
-    state: "Gujrat",
+    State: ['Gujrat(GJ)','AndhraPradesh(AP)','ArunachalPradesh(AR)','Assam(AS)','Bihar(BR)','Chhattigart(CG)','GOA(GA)','Haryana(HR)','HimachalPradesh(HP)','Jammu and Kashmir(JK)',],
     city: "Surat",
     Pin_code: 395009,
-    bikeManufacturers: "ImportantParts",
-    Modelname: "HeroHonda",
-    YearOfManufacturing: 2023
-
+    bikeManufacturers: ['Suzuki','RoyalEnfield','Kawasaki','Harley-Davidson','yamahamotorcompany','Aprilia','Honda','KTM','BajajAuto','Ducati','Benelli',],
+    Modelname: "Access125",
+    YearOfManufacturing: [2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012,2011,2010,2009,2008,2007,2006,2005,2004,2003,2002,2001,2000,'Before2000'],
+    BikeFrontSideImage: "Clickordragafiletothisareatoupload",
+    BikeBackSideImage: "Clickordragafiletothisareatoupload",
+    BikeRightSideImage: "Clickordragafiletothisareatoupload",
+    BikeEngineBayImage: "Clickordragafiletothisareatoupload"
 
 };
 
@@ -44,7 +47,7 @@ async function ServiceEnquiry(){
     console.log("Service Enquiry Successfully");
 }
 
-//   ServiceEnquiry();
+  ServiceEnquiry();
 
  async function update() {
     const Temp = await db.collection('ServiceEnquiry').updateOne({ email: "abc@gmail.com" }, { $set: { mobile_no: 97558889825 } })
@@ -53,10 +56,10 @@ async function ServiceEnquiry(){
         return false;
     }
 
-    console.log("Update Succesfully..");
+    console.log("Update Successfully..");
 }
 
-update();
+// update();
 
 
 async function delete_1() {
@@ -66,7 +69,7 @@ async function delete_1() {
         return false;
     }
 
-    console.log("Delete Succesfully..");
+    console.log("Delete Successfully..");
 }
 
 // delete_1();
