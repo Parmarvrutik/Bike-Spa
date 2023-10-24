@@ -1,7 +1,7 @@
 const db = require("./db");
 
 const data ={
-    name: "Vrutik",
+    name: "Vrutik", 
     email: "abc@gmail.com",
     mobile_no: 1234567890,
     Accessories: ['SilencerGuard','SareeGuard','SideGuard','SideViewMirror',],
